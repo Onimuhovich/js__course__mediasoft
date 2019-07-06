@@ -1,19 +1,24 @@
 alert("Вас приветствует очень простой калькулятор v1.0.0, \nвыполняющий только четыре операции : \nСложение \nВычитание \nУмножение \nДеление");
 
-let a = +prompt('Введите первое число', '');
-let op = prompt('Введите одно из даных операций " + ", " - ", " * ", " / ".', '');
-let b = +prompt('Введите второе число', '');
 
-let result;
+  let a = +prompt('Введите первое число', '');
+  let op = prompt('Введите одно из данных операций " + ", " - ", " * ", " / ".', '');
+  let b = +prompt('Введите второе число', '');
 
-if (op === '+') {
-    result = (a + b);
-} else if (op === '-') {
-    result = a - b;
-} else if (op === '*') {
-    result = a * b;
-} else if (op === '/') {
-    result = a / b;
+
+function calc(a, op, b) {
+    
+  if (op === '+') {
+      return a + b;
+  } else if (op === '-') {
+      return a - b;
+  } else if (op === '*') {
+      return a * b;
+  } else if (op === '/') {
+      return a / b;
+  }
+  
 }
 
-alert(a + String(op) + b + '=' + result);
+alert(a + String(op) + b + '=' + calc(a, op, b));
+
