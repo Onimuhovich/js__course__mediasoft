@@ -19,12 +19,17 @@ h1 {
                  1px 1px 15px blue;
 }
 
+.sea {
+    display: flex;
+}
+
 /*Стиль для JS объектов*/
 
 .field {
     position: relative;
     width: 500px;
     height: 500px;
+    display: flex;
     margin: 0 auto;
     
     background-color: #ffffff;
