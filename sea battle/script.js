@@ -2,6 +2,14 @@ function fieldPlayers() {
     let doc = document,
         iDiv = doc.createElement('div');
         iDiv.className = 'field players';
+    let pDiv = doc.createElement('p');
+        pDiv.className = 'name-field';
+    
+    let contentDiv = doc.createTextNode('Ваше поле');
+        iDiv.appendChild(pDiv);
+        pDiv.appendChild(contentDiv);
+    
+    console.log(iDiv);
     
         //Нужно добавить название полю Игрока
     
@@ -32,6 +40,12 @@ function fieldOponent() {
     let doc = document,
         iDiv = doc.createElement('div');
         iDiv.className = 'field oponent';
+    let pDiv = doc.createElement('p');
+        pDiv.className = 'name-field';
+    
+    let contentDiv = doc.createTextNode('Поле опонента');
+        iDiv.appendChild(pDiv);
+        pDiv.appendChild(contentDiv);
     
     //Нужно добавить название поля Опонента
     
