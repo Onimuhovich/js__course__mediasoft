@@ -4,10 +4,10 @@ export function shepsTablBody(tr, td) {
 let tblBody = doc.createElement('tbody');
         tblBody.className = 'tblbody';
     
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < tr; i++) {
         let line = doc.createElement('tr');
         
-        for (let x = 0; x < 1; x++) {
+        for (let x = 0; x < td; x++) {
             let box = doc.createElement('td');
             box.className = 'cell';
             line.appendChild(box);

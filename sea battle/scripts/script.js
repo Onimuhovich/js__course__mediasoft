@@ -13,10 +13,6 @@ function fieldPlayers() {
         iDiv.appendChild(pDiv);
         pDiv.appendChild(contentDiv);
     
-    console.log(iDiv);
-    
-        //Нужно добавить название полю Игрока
-    
     let tbl = doc.createElement('table');
         tbl.className = 'table';
     
