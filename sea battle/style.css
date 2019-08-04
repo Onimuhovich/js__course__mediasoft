@@ -1,19 +1,18 @@
-.container {
-    background-color: rgba(169, 169, 169, 0.7);
-    border-radius: 30px;
-    width: 100%;
-    height: 900px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
 body {
     margin: 0;
     padding: 0;
     
     background: url(img/water-back.jpg) no-repeat;
     background-size: cover;
+}
+
+.container {
+    background-color: rgba(169, 169, 169, 0.7);
+    border-radius: 30px;
+    width: 100%;
+    height: 900px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -27,24 +26,26 @@ h1 {
 
 .sea {
     display: flex;
+    position: relative;
 }
 
 /*Стиль для JS объектов*/
 
-.field {
+/* Поля */
+.field { 
     position: relative;
     width: 500px;
-    min-width: 100px;
     height: 500px;
     display: flex;
     margin: 0 auto;
     
     background-color: #ffffff;
-    opacity: 1;
     border-radius: 10px;
     
     box-shadow: 0 0 10px 0px black;
 }
+
+/* Таблица */
 
 .table {
     position: absolute;
@@ -53,10 +54,17 @@ h1 {
     border-collapse: collapse;
 }
 
-.tblbody {
-    margin: 0;
-    padding: 0;
+/* Кораблики */
+
+.shep-units {
+    margin: auto;
+    margin-top: 25px;
+    
+    border-collapse: collapse;
+    background-color: red;
 }
+
+/* Яйчейки */
 
 .cell {
     margin: 0;
@@ -67,9 +75,24 @@ h1 {
     border: 2px solid black;
 }
 
+/* Заголовки полей */
+
 .name-field {
     margin: 0 auto;
     font-size: 20px;
     padding-top: 5px;
     font-weight: bold;
+}
+
+.shep {
+    width: 500px;
+    height: 220px;
+    margin: 0 auto;
+    
+    background-color: #ffffff;
+    
+    
+    border-radius: 10px;
+    
+    box-shadow: 0 0 10px 0px black;
 }
